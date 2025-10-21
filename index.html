@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="src/main.js" async></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>HNG Internship | Profile Card</title>
+  </head>
+  <body>
+    <div data-testid="test-whole-page" class="whole-page">
+      <article data-testid="test-profile-card" class="profile-card">
+        <div class="card-content" data-testid="test-card-content">
+          <div
+            class="card-time"
+            data-testid="test-user-time"
+            aria-label="Local time"
+          ></div>
+          <div class="grid-container" data-testid="test-grid-container">
+            <div class="left-column">
+              <figure class="profile-image" data-testid="test-profile-image">
+                <img
+                  data-testid="test-user-avatar"
+                  class="user-avatar"
+                  src="images/avatar.jpg"
+                  alt="This is an image of me, Natania."
+                />
+              </figure>
+
+              <h2
+                class="name"
+                data-testid="test-user-name"
+                aria-label="Profile name"
+              >
+                Ezeigwe Natania
+              </h2>
+              <p class="title" data-testid="test-profile-title">
+                Front-end Developer
+              </p>
+
+              <p class="bio" data-testid="test-user-bio">
+                Hi everyone, I'm Natania Ezeigwe, but my friends call me Natty
+                or Ghost(I'm a gamer). I'm a front-end developer and an aspiring
+                Fullstack developer and a Game Developer. Currently, I'm
+                learning a bunch of things, from generative AI to cloud
+                computing. I'm a bit of an overachiever i guess. Below you'll
+                find my various social media handle,reach out, I love meeting
+                new people.
+              </p>
+              <nav class="social-links" data-testid="test-user-social-links">
+                <a
+                  href="https://tinyurl.com/natty-eze"
+                  data-testid="test-user-social-instagram"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://tinyurl.com/natania-Ezeigwe"
+                  data-testid="test-user-social-linkedin"
+                  aria-label="LnkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://github.com/QueenNatty"
+                  data-testid="test-user-social-github"
+                  aria-label="Github"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://x.com/Nat416444572144?s=09"
+                  data-testid="test-user-social-x"
+                  aria-label="X"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </nav>
+            </div>
+            <div class="single-column-extras">
+              <section class="interests" aria-label="Hobbies and dislikes">
+                <h3 class="section-title" data-testid="hobbies-title">
+                  My Hobbies
+                </h3>
+                <ul class="hobbies" data-testid="test-user-hobbies">
+                  <li>Chess</li>
+                  <li>Reading</li>
+                  <li>Writing</li>
+                </ul>
+
+                <h3 class="section-title" data-testid="dislikes-title">
+                  My Dislikes
+                </h3>
+                <ul class="dislikes" data-testid="test-user-dislikes">
+                  <li>Crowded Places</li>
+                  <li>Dirty Environment</li>
+                  <li>Writer's Block</li>
+                </ul>
+              </section>
+            </div>
+            <section class="info-btn" data-testid="test-info-btn">
+              <a
+                href="about.html"
+                aria-label="btn"
+                data-testid="test-about-btn"
+                class="about-btn"
+                >About Me</a
+              >
+              <a
+                href="contact.html"
+                aria-label="btn"
+                data-test="test-contact-btn"
+                class="contact-btn"
+                >Contact Me</a
+              >
+            </section>
+          </div>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
