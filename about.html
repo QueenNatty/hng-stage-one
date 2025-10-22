@@ -1,17 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <script src="src/main.js" async></script>
     <link rel="stylesheet" href="src/main.css" />
+    <link rel="stylesheet" href="src/about.css" />
     <title>HNG Internship | Profile Card</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <body>
+    <main class="whole-page" data-testid="test-about-page">
+      <div class="container" data-testid="test-page-container">
+        <header class="section-header">
+          <h1 class="about-title">About Me</h1>
+          <div class="nav-row">
+            <a
+              class="nav-btn"
+              href="index.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Home</a
+            >
+            <a
+              class="nav-btn"
+              href="contact.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Contact</a
+            >
+          </div>
+        </header>
+        <section class="about">
+          <div class="avatar-wrap">
+            <img src="images/avatar.jpg" alt="Natania avatar" />
+          </div>
+          <div>
+            <h2>Hi, I'm Natania Ezeigwe</h2>
+            <p class="bio" data-testid="test-about-btn">
+              I'm a Front-End developer, aspiring Fullstack and Game developer.
+              Currently I'm a Software Engineering student. I am presently
+              learning about generative AI, web design, cloud concepts and 2D
+              animation. Outside work I game, shoot photos and write short
+              stories. During my free time, i play chess with friends, listen to
+              podcasts on various topics, read books and listen to classical
+              music.
+            </p>
+            <div class="about-meta">
+              <div class="stack">
+                <span class="pill">Frontend</span><span class="pill">React</span
+                ><span class="pill">Python</span
+                ><span class="pill">Game Dev</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="grid-sections">
+          <section class="card" data-testid="test-about-goals">
+            <h2>Goals for the HNG Internship</h2>
+            <p>Learn and apply collaborative remote workflows.</p>
+            <p>
+              Ship a small, polished project demonstrating frontend
+              fundamentals.
+            </p>
+            <p>
+              Gain confidence contributing to real codebases and receiving
+              feedback.
+            </p>
+          </section>
+
+          <section class="card" data-testid="test-about-confidence">
+            <h2>Areas of Low Confidence</h2>
+            <p>Backend APIs and server-side concepts.</p>
+            <p>Advanced state management patterns in complex apps.</p>
+            <p>Performance tuning and deployment pipelines.</p>
+          </section>
+
+          <section class="card" data-testid="test-about-future-note">
+            <h2>Note to Future Self</h2>
+            <p>
+              Keep building small, focused projects. Ask for help early. Iterate
+              quickly.
+            </p>
+            <p>
+              Track progress in a short weekly journal to reflect and plan next
+              steps.
+            </p>
+          </section>
+
+          <section class="card" data-testid="test-about-extra">
+            <h2>Extra Thoughts</h2>
+            <p>
+              Embrace curiosity and play—game dev experiments often teach UI
+              patterns.
+            </p>
+            <p>
+              Prioritize fundamentals: clear layouts, accessible interfaces, and
+              readable code.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

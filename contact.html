@@ -9,18 +9,106 @@
     />
     <script src="src/main.js" async></script>
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="src/contact.css">
+    <link rel="stylesheet" href="src/contact.css" />
     <title>HNG Internship | Profile Card</title>
   </head>
   <body>
     <main class="whole-page" data-testid="test-contact-page">
-      <div class="grid-container" data-testid="test-grid-container">
-        <div class="left-column" data-testid="test-left-column">
-          <section class="img-section">
-            <figure class="profile-img">
-              <img src="images/avatar.jpg" alt="">
-            </figure>
-          </section>
+      <div class="container" data-testid="test-container">
+        <section class="img-section">
+          <figure>
+            <img
+              src="images/avatar.jpg"
+              alt="The user's image"
+              data-testid="test-user-avatar"
+              class="profile-image"
+            />
+          </figure>
+        </section>
+        <div class="contact-form" data-testid="test-contact-form">
+          <h2>Get In Touch</h2>
+          <form id="contactForm" novalidate>
+            <label for="name">Full Name</label
+            ><input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="input-field"
+              required
+              data-testid="test-conact-name"
+              aria-describedby="name-error"
+            />
+            <div id="name-error" class="field-error" aria-live="polite"></div>
+            <label for="subject">Subject</label
+            ><input
+              type="text"
+              id="subject"
+              placeholder="Subject"
+              class="input-field"
+              data-testid="test-conact-subject"
+              required
+              aria-describedby="subject-error"
+            />
+            <div
+              id="subject-error"
+              class="field-error"
+              aria-live="polite"
+            ></div>
+            <label for="email">Email</label
+            ><input
+              type="email"
+              id="email"
+              placeholder="Please provide your email"
+              required
+              class="input-field"
+              data-testid="test-contact-email"
+              aria-describedby="email-error"
+            />
+            <div
+              id="email-error"
+              class="field-error"
+              aria-live="polite"
+              data-testid="test-contact-email-error"
+            ></div>
+            <label for="message">Message</label
+            ><textarea
+              id="message"
+              placeholder="Enter your message"
+              class="input-field message"
+              required
+              aria-describedby="message-error"
+              data-testid="test-contact-message"
+            ></textarea>
+            <div
+              id="message-error"
+              class="field-error"
+              aria-live="polite"
+            ></div>
+            <button
+              type="submit"
+              class="send-btn"
+              data-testid="test-contact-submit"
+            >
+              Send
+            </button>
+            <div id="form-message" role="status" aria-live="polite"></div>
+            <div style="display: flex; gap: 8px; margin-top: 14px">
+              <a
+                class="nav-btn"
+                href="index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Home</a
+              >
+              <a
+                class="nav-btn"
+                href="about.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >About</a
+              >
+            </div>
+          </form>
         </div>
       </div>
     </main>

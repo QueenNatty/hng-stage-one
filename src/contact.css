@@ -1,0 +1,241 @@
+main {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #0b0b0b, #0f0f0f);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.img-section {
+    flex: 0 0 55%;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.img-section .profile-image {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    margin: 0;
+    filter: brightness(0.45) contrast(0.95);
+}
+
+.img-section figure {
+    margin: 0;
+}
+
+.img-section img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    flex: 1 1 45%;
+    color: #fff;
+    background: rgba(18, 18, 18, 0.95);
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .img-section {
+        flex: 0 0 50%;
+        min-height: 60vh;
+    }
+
+    .contact-form {
+        flex: 1 1 50%;
+        padding: 28px;
+    }
+
+    .contact-form h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 520px;
+        margin: 16px;
+        border-radius: 12px;
+    }
+
+    .img-section {
+        flex: 0 0 auto;
+        min-height: 36vh;
+        width: 100%;
+    }
+
+    .img-section .profile-image {
+        height: 100%;
+        filter: brightness(0.5) contrast(0.95);
+    }
+
+    .contact-form {
+        flex: none;
+        width: 100%;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .contact-form h2 {
+        font-size: 22px;
+    }
+
+    .input-field {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    .message {
+        height: 140px;
+    }
+
+    .send-btn {
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #fff;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.message {
+    height: 100px;
+    resize: none;
+}
+
+.send-btn {
+    width: 100%;
+    padding: 10px;
+    background: #333;
+    border: none;
+    color: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.send-btn:hover {
+    background: #555;
+}
+
+.contact-form {
+    flex: 1 1 45%;
+    color: #fff;
+    background: rgba(18, 18, 18, 0.95);
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    border-radius: 0;
+}
+
+#form-message {
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.form-error {
+    color: #ffb4b4;
+    background: rgba(255, 20, 60, 0.06);
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.form-success {
+    color: #d4ffd6;
+    background: rgba(0, 200, 100, 0.06);
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.input-error {
+    box-shadow: 0 0 0 3px rgba(255, 20, 60, 0.06) inset;
+    border-color: #ff8080;
+}
+
+.field-error {
+    min-height: 18px;
+    font-size: 13px;
+    color: #ffb4b4;
+    margin-top: 4px;
+    margin-bottom: 6px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    margin: 16px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 360ms cubic-bezier(.2, .9, .25, 1), background 360ms cubic-bezier(.2, .9, .25, 1), box-shadow 360ms cubic-bezier(.2, .9, .25, 1);
+}
+
+.nav-btn:hover {
+    background: linear-gradient(90deg, rgba(255, 111, 154, 0.12), rgba(255, 111, 154, 0.04));
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(66, 24, 114, 0.12);
+}

@@ -4,7 +4,6 @@
   --muted: #ccc;
   --title-accent: #ffff00;
   --avatar-border: #fff;
-  /* Button animation tokens */
   --btn-dur: 360ms;
   --btn-ease: cubic-bezier(.2, .9, .25, 1);
 }
@@ -294,6 +293,32 @@ body {
   letter-spacing: 0.2px;
   animation: fadeUp 420ms ease both;
   animation-delay: 80ms
+}
+
+.name {
+  position: relative
+}
+
+.name::after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: -6px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), #ffb3d6);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 320ms cubic-bezier(.2, .9, .25, 1)
+}
+
+.name:hover {
+  transform: translateY(-6px) scale(1.04);
+  color: #fff
+}
+
+.name:hover::after {
+  transform: scaleX(1)
 }
 
 .title {
